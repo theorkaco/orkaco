@@ -1,0 +1,97 @@
+/* Fontes licenciadas da ORKA ativas. SportingGrotesque/DM Sans permanecem
+   listadas como fallback de segurança em main.css (--font-heading/--font-body),
+   mas não deveriam mais entrar em uso: os pesos abaixo cobrem os cenários do template.
+   NOTA DE FORMATO: sem acesso a rede neste ambiente para gerar .woff2 (exige libbrotli),
+   então os arquivos estão em .woff (compressão zlib) + .ttf como fallback. Funciona em
+   100% dos navegadores modernos; se quiser o ganho extra de tamanho do .woff2, rode
+   `fonttools ttLib.woff2 compress` localmente (tem brotli) e solte os arquivos na mesma pasta. */
+@font-face {
+    font-family: 'SportingGrotesque';
+    src: url('../fonts/SportingGrotesque-Regular.woff2') format('woff2'),
+    url('../fonts/SportingGrotesque-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SportingGrotesque';
+    src: url('../fonts/SportingGrotesque-Bold.woff2') format('woff2'),
+    url('../fonts/SportingGrotesque-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------------------------------------------------------------------------
+   Neue Haas Grotesk Display Pro — heading (--font-heading) */
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/NeueHaasDisplayPro-Thin.woff') format('woff'),
+    url('../fonts/NeueHaasDisplayPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/NeueHaasDisplayPro-Light.woff') format('woff'),
+    url('../fonts/NeueHaasDisplayPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/NeueHaasDisplayPro-Regular.woff') format('woff'),
+    url('../fonts/NeueHaasDisplayPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/NeueHaasDisplayPro-Medium.woff') format('woff'),
+    url('../fonts/NeueHaasDisplayPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/NeueHaasDisplayPro-Bold.woff') format('woff'),
+    url('../fonts/NeueHaasDisplayPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('../fonts/NeueHaasDisplayPro-Black.woff') format('woff'),
+    url('../fonts/NeueHaasDisplayPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------------------------------------------------------------------------
+   Codec Pro — corpo (--font-body)
+   ATENÇÃO: o pacote enviado só trouxe Regular + Italic (sem peso Bold).
+   Onde o template pedir font-weight 600/700 em texto corrido, o navegador vai
+   aplicar "bold sintético" (esticado) na Regular em vez de usar um Bold desenhado.
+   Funciona, mas não é o ideal visualmente — ver aviso completo na resposta. */
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('../fonts/CodecPro-Regular.woff') format('woff'),
+    url('../fonts/CodecPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('../fonts/CodecPro-Italic.woff') format('woff'),
+    url('../fonts/CodecPro-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
